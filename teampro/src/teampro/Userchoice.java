@@ -8,12 +8,12 @@ package teampro;
  *
  * @author Natsuki Rafi
  */
-public class JFrame1 extends javax.swing.JFrame {
+public class Userchoice extends javax.swing.JFrame {
 
     /**
-     * Creates new form JFrame1
+     * Creates new form Userchoice
      */
-    public JFrame1() {
+    public Userchoice() {
         initComponents();
     }
 
@@ -35,7 +35,6 @@ public class JFrame1 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(102, 255, 204));
         getContentPane().setLayout(null);
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
@@ -50,7 +49,7 @@ public class JFrame1 extends javax.swing.JFrame {
         getContentPane().add(jSeparator3);
         jSeparator3.setBounds(180, 140, 310, 20);
 
-        rSButtonHover1.setText("Login");
+        rSButtonHover1.setText("EXIT");
         rSButtonHover1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButtonHover1ActionPerformed(evt);
@@ -69,7 +68,7 @@ public class JFrame1 extends javax.swing.JFrame {
         getContentPane().add(jSeparator2);
         jSeparator2.setBounds(190, 338, 310, 2);
 
-        rSButtonHover2.setText("Register");
+        rSButtonHover2.setText("SEAT ADD");
         getContentPane().add(rSButtonHover2);
         rSButtonHover2.setBounds(240, 160, 170, 40);
 
@@ -78,7 +77,6 @@ public class JFrame1 extends javax.swing.JFrame {
         jLabel6.setBounds(0, 0, 640, 410);
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSButtonHover1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover1ActionPerformed
@@ -102,20 +100,20 @@ public class JFrame1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Userchoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Userchoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Userchoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Userchoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFrame1().setVisible(true);
+                new Userchoice().setVisible(true);
             }
         });
     }
