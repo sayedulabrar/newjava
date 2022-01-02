@@ -40,9 +40,9 @@ public class Userchoice extends javax.swing.JFrame {
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
         jLabel7.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel7.setText("THANKS FOR CHOOSING ICONBG");
+        jLabel7.setText("MAY YOUR JOURNEY BE SAFE");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(90, 40, 460, 40);
+        jLabel7.setBounds(130, 40, 460, 40);
 
         jSeparator3.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator3.setForeground(new java.awt.Color(204, 255, 255));
