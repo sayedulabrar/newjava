@@ -1157,14 +1157,16 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setEditable(false);
        five.jTextFieldPassengers2.setEditable(false);
        five.jTextFieldTicketType.setEditable(false);
+       
+       
         
         x.setVisible(true);
         
-        six ss=new six();
-        ss.jTextFieldTotal.setText(Integer.toString(SubTotal));
-        ss.jTextFieldTax.setText(Integer.toString(Dtax));
-        ss.jTextFieldSubTotal.setText(Integer.toString(Tfare));
-        ss.setVisible(true);
+//        six ss=new six();
+//        ss.jTextFieldTotal.setText(Integer.toString(SubTotal));
+//        ss.jTextFieldTax.setText(Integer.toString(Dtax));
+//        ss.jTextFieldSubTotal.setText(Integer.toString(Tfare));
+//        ss.setVisible(true);
         
         
     }//GEN-LAST:event_submitActionPerformed
@@ -1221,7 +1223,7 @@ public class three extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButtonFirstClass1;
     private javax.swing.JRadioButton jRadioButtonReturn1;
     private javax.swing.JRadioButton jRadioButtonSingle1;
-    private javax.swing.JTextField jTextFieldPassenger1;
+    public static javax.swing.JTextField jTextFieldPassenger1;
     private rojeru_san.componentes.RSCalendar rSCalendar1;
     private rojeru_san.complementos.RSButtonHover submit;
     // End of variables declaration//GEN-END:variables
