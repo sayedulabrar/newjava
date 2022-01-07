@@ -1132,21 +1132,41 @@ public class three extends javax.swing.JFrame {
       
       
        else{
-           five.jTextFieldTo.setText(null);
-       
-       
-       
-       five.jTextFieldPrice.setText(null);
-       five.jTextFieldForm.setText(null);
-       five.jTextFieldDate2.setText(null);
-       five.jTextFieldTime2.setText(null);
-       five.jTextFieldClass.setText(null);
-       five.jTextFieldPassengers2.setText(null);
-       five.jTextFieldTicketType.setText(null);
+//           five.jTextFieldTo.setText(null);
+//       
+//       
+//       
+//       five.jTextFieldPrice.setText(null);
+//       five.jTextFieldForm.setText(null);
+//       five.jTextFieldDate2.setText(null);
+//       five.jTextFieldTime2.setText(null);
+//       five.jTextFieldClass.setText(null);
+//       five.jTextFieldPassengers2.setText(null);
+//       five.jTextFieldTicketType.setText(null);
        }
-        
+       
+       
+       five.jTextFieldTo.setEditable(false);
+       
+       
+       
+       five.jTextFieldPrice.setEditable(false);
+       five.jTextFieldForm.setEditable(false);
+       five.jTextFieldDate2.setEditable(false);
+       five.jTextFieldTime2.setEditable(false);
+       five.jTextFieldClass.setEditable(false);
+       five.jTextFieldPassengers2.setEditable(false);
+       five.jTextFieldTicketType.setEditable(false);
         
         x.setVisible(true);
+        
+        six ss=new six();
+        ss.jTextFieldTotal.setText(Integer.toString(SubTotal));
+        ss.jTextFieldTax.setText(Integer.toString(Dtax));
+        ss.jTextFieldSubTotal.setText(Integer.toString(Tfare));
+        ss.setVisible(true);
+        
+        
     }//GEN-LAST:event_submitActionPerformed
 
     /**

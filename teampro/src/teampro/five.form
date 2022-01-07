@@ -31,7 +31,10 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel2" min="-2" pref="654" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -48,89 +51,99 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jPanel4" alignment="0" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel8" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                      <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel11" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                      <Component id="jLabel15" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                      <Component id="jLabel10" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                      <Component id="jLabel14" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                      <Component id="jLabel13" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="rSButtonHover4" min="-2" pref="117" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel8" min="-2" pref="119" max="-2" attributes="0"/>
+                          <EmptySpace min="193" pref="193" max="-2" attributes="0"/>
+                          <Component id="jTextFieldForm" min="-2" pref="608" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jTextFieldTime2" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextFieldTicketType" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextFieldClass" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextFieldForm" max="32767" attributes="0"/>
-                      <Component id="jTextFieldTo" max="32767" attributes="0"/>
-                      <Component id="jTextFieldDate2" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextFieldPrice" alignment="1" pref="608" max="32767" attributes="0"/>
-                      <Component id="jTextFieldPassengers2" alignment="1" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel9" min="-2" pref="119" max="-2" attributes="0"/>
+                          <EmptySpace min="193" pref="193" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTo" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="162" pref="162" max="-2" attributes="0"/>
+                          <Component id="jTextFieldDate2" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel11" min="-2" pref="119" max="-2" attributes="0"/>
+                          <EmptySpace min="193" pref="193" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTime2" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel15" min="-2" pref="185" max="-2" attributes="0"/>
+                          <EmptySpace min="127" pref="127" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTicketType" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel10" min="-2" pref="119" max="-2" attributes="0"/>
+                          <EmptySpace min="193" pref="193" max="-2" attributes="0"/>
+                          <Component id="jTextFieldClass" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel14" min="-2" pref="185" max="-2" attributes="0"/>
+                          <EmptySpace min="127" pref="127" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPassengers2" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel13" min="-2" pref="144" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPrice" min="-2" pref="608" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="64" max="32767" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextFieldForm" linkSize="1" min="-2" pref="53" max="-2" attributes="0"/>
-                      <Component id="jLabel8" linkSize="2" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jLabel8" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldForm" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel9" linkSize="2" alignment="0" min="-2" pref="39" max="-2" attributes="0"/>
-                      <Component id="jTextFieldTo" linkSize="1" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldTo" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel12" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldDate2" min="-2" pref="44" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel11" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldTime2" min="-2" pref="44" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel15" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="jTextFieldDate2" linkSize="1" min="-2" pref="48" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jLabel12" linkSize="2" min="-2" pref="39" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel11" linkSize="2" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                      <Component id="jTextFieldTime2" linkSize="1" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel15" linkSize="2" min="-2" pref="39" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="jTextFieldTicketType" linkSize="1" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jTextFieldTicketType" min="-2" pref="44" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jLabel10" linkSize="2" max="32767" attributes="0"/>
-                      <Component id="jTextFieldClass" linkSize="1" max="32767" attributes="0"/>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel10" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldClass" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jLabel14" linkSize="2" max="32767" attributes="0"/>
-                      <Component id="jTextFieldPassengers2" linkSize="1" max="32767" attributes="0"/>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel14" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldPassengers2" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jLabel13" max="32767" attributes="0"/>
-                      <Component id="jTextFieldPrice" linkSize="1" max="32767" attributes="0"/>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel13" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jTextFieldPrice" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="rSButtonHover4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -348,11 +361,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="rojeru_san.complementos.RSButtonHover" name="rSButtonHover4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Exit"/>
-          </Properties>
-        </Component>
       </SubComponents>
     </Container>
   </SubComponents>
