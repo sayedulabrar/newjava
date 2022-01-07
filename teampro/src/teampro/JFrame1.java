@@ -27,11 +27,11 @@ public class JFrame1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel7 = new javax.swing.JLabel();
+        rSButtonHover3 = new rojeru_san.complementos.RSButtonHover();
         jSeparator3 = new javax.swing.JSeparator();
-        rSButtonHover1 = new rojeru_san.complementos.RSButtonHover();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        rSButtonHover2 = new rojerusan.RSButtonHover();
+        rSButtonHover4 = new rojeru_san.complementos.RSButtonHover();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -45,19 +45,14 @@ public class JFrame1 extends javax.swing.JFrame {
         getContentPane().add(jLabel7);
         jLabel7.setBounds(90, 40, 460, 40);
 
+        rSButtonHover3.setText("Register");
+        getContentPane().add(rSButtonHover3);
+        rSButtonHover3.setBounds(230, 170, 200, 40);
+
         jSeparator3.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator3.setForeground(new java.awt.Color(204, 255, 255));
         getContentPane().add(jSeparator3);
         jSeparator3.setBounds(180, 140, 310, 20);
-
-        rSButtonHover1.setText("Login");
-        rSButtonHover1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButtonHover1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(rSButtonHover1);
-        rSButtonHover1.setBounds(240, 280, 170, 40);
 
         jSeparator1.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(204, 255, 255));
@@ -69,9 +64,9 @@ public class JFrame1 extends javax.swing.JFrame {
         getContentPane().add(jSeparator2);
         jSeparator2.setBounds(190, 338, 310, 2);
 
-        rSButtonHover2.setText("Register");
-        getContentPane().add(rSButtonHover2);
-        rSButtonHover2.setBounds(240, 160, 170, 40);
+        rSButtonHover4.setText("Login");
+        getContentPane().add(rSButtonHover4);
+        rSButtonHover4.setBounds(230, 270, 200, 40);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Natsuki Rafi\\Pictures\\1.jpg")); // NOI18N
         getContentPane().add(jLabel6);
@@ -126,7 +121,7 @@ public class JFrame1 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private rojeru_san.complementos.RSButtonHover rSButtonHover1;
-    private rojerusan.RSButtonHover rSButtonHover2;
+    private rojeru_san.complementos.RSButtonHover rSButtonHover3;
+    private rojeru_san.complementos.RSButtonHover rSButtonHover4;
     // End of variables declaration//GEN-END:variables
 }

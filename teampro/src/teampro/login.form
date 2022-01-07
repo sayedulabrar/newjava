@@ -151,16 +151,13 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="rojerusan.RSButtonHover" name="rSButtonHover2">
+    <Component class="rojeru_san.complementos.RSButtonHover" name="rSButtonHover1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Register"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rSButtonHover2ActionPerformed"/>
-      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="350" y="320" width="150" height="40"/>
+          <AbsoluteConstraints x="350" y="320" width="140" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

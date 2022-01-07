@@ -29,9 +29,9 @@ public class Userchoice extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         rSButtonHover1 = new rojeru_san.complementos.RSButtonHover();
+        rSButtonHover3 = new rojeru_san.complementos.RSButtonHover();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        rSButtonHover2 = new rojerusan.RSButtonHover();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,6 +58,10 @@ public class Userchoice extends javax.swing.JFrame {
         getContentPane().add(rSButtonHover1);
         rSButtonHover1.setBounds(240, 280, 170, 40);
 
+        rSButtonHover3.setText("Seat Add");
+        getContentPane().add(rSButtonHover3);
+        rSButtonHover3.setBounds(240, 170, 170, 40);
+
         jSeparator1.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(204, 255, 255));
         getContentPane().add(jSeparator1);
@@ -67,10 +71,6 @@ public class Userchoice extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(204, 255, 255));
         getContentPane().add(jSeparator2);
         jSeparator2.setBounds(190, 338, 310, 2);
-
-        rSButtonHover2.setText("SEAT ADD");
-        getContentPane().add(rSButtonHover2);
-        rSButtonHover2.setBounds(240, 160, 170, 40);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Natsuki Rafi\\Pictures\\1.jpg")); // NOI18N
         getContentPane().add(jLabel6);
@@ -125,6 +125,6 @@ public class Userchoice extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private rojeru_san.complementos.RSButtonHover rSButtonHover1;
-    private rojerusan.RSButtonHover rSButtonHover2;
+    private rojeru_san.complementos.RSButtonHover rSButtonHover3;
     // End of variables declaration//GEN-END:variables
 }

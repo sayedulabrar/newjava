@@ -43,7 +43,7 @@ public class three extends javax.swing.JFrame {
         jTextFieldPassenger1 = new javax.swing.JTextField();
         jComboBoxTime = new javax.swing.JComboBox<>();
         jDateChooser = new com.toedter.calendar.JDateChooser();
-        rSButtonHover1 = new rojerusan.RSButtonHover();
+        rSButtonHover2 = new rojeru_san.complementos.RSButtonHover();
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -111,12 +111,7 @@ public class three extends javax.swing.JFrame {
 
         jComboBoxTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Time", "11:30", "12:30", "1:30", "2:30" }));
 
-        rSButtonHover1.setText("Submit");
-        rSButtonHover1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButtonHover1ActionPerformed(evt);
-            }
-        });
+        rSButtonHover2.setText("Submit");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -134,29 +129,28 @@ public class three extends javax.swing.JFrame {
                         .addGap(32, 32, 32)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jComboBoxDestination, 0, 480, Short.MAX_VALUE)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jRadioButtonFirstClass1, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jRadioButtonSingle1))
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addGap(201, 201, 201)
-                                            .addComponent(jRadioButtonEconomy1))
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addGap(118, 118, 118)
-                                            .addComponent(jRadioButtonReturn1))))
-                                .addComponent(jComboBoxTime, 0, 480, Short.MAX_VALUE)
-                                .addComponent(jDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButtonFirstClass1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jRadioButtonSingle1))
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(201, 201, 201)
+                                        .addComponent(jRadioButtonEconomy1))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(118, 118, 118)
+                                        .addComponent(jRadioButtonReturn1))))
+                            .addComponent(jComboBoxTime, 0, 480, Short.MAX_VALUE)
+                            .addComponent(jDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextFieldPassenger1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE))))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(213, 213, 213)
-                .addComponent(rSButtonHover1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(321, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rSButtonHover2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(178, 178, 178))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,9 +184,9 @@ public class three extends javax.swing.JFrame {
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextFieldPassenger1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addComponent(rSButtonHover1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
+                .addGap(44, 44, 44)
+                .addComponent(rSButtonHover2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
 
         jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jComboBoxDestination, jComboBoxTime, jDateChooser, jRadioButtonEconomy1, jRadioButtonFirstClass1, jRadioButtonReturn1, jRadioButtonSingle1, jTextFieldPassenger1});
@@ -326,7 +320,7 @@ public class three extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButtonReturn1;
     private javax.swing.JRadioButton jRadioButtonSingle1;
     private javax.swing.JTextField jTextFieldPassenger1;
-    private rojerusan.RSButtonHover rSButtonHover1;
+    private rojeru_san.complementos.RSButtonHover rSButtonHover2;
     private rojeru_san.componentes.RSCalendar rSCalendar1;
     // End of variables declaration//GEN-END:variables
 }

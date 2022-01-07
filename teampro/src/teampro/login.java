@@ -34,7 +34,7 @@ public class login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
-        rSButtonHover2 = new rojerusan.RSButtonHover();
+        rSButtonHover1 = new rojeru_san.complementos.RSButtonHover();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -86,14 +86,9 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(180, 220, 310, 10);
 
-        rSButtonHover2.setText("Register");
-        rSButtonHover2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButtonHover2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(rSButtonHover2);
-        rSButtonHover2.setBounds(350, 320, 150, 40);
+        rSButtonHover1.setText("Register");
+        getContentPane().add(rSButtonHover1);
+        rSButtonHover1.setBounds(350, 320, 140, 40);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Natsuki Rafi\\Pictures\\1.jpg")); // NOI18N
         getContentPane().add(jLabel6);
@@ -150,7 +145,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTextField3;
-    private rojerusan.RSButtonHover rSButtonHover2;
+    private rojeru_san.complementos.RSButtonHover rSButtonHover1;
     private rojeru_san.complementos.RSButtonHover rSButtonHover3;
     // End of variables declaration//GEN-END:variables
 }
