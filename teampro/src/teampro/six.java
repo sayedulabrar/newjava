@@ -249,8 +249,8 @@ public class six extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextFieldSubTotal;
-    private javax.swing.JTextField jTextFieldTax;
-    private javax.swing.JTextField jTextFieldTotal;
+    public static javax.swing.JTextField jTextFieldSubTotal;
+    public static javax.swing.JTextField jTextFieldTax;
+    public static javax.swing.JTextField jTextFieldTotal;
     // End of variables declaration//GEN-END:variables
 }

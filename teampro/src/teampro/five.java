@@ -333,14 +333,14 @@ public class five extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextFieldClass;
-    private javax.swing.JTextField jTextFieldDate2;
-    private javax.swing.JTextField jTextFieldForm;
-    private javax.swing.JTextField jTextFieldPassengers2;
-    private javax.swing.JTextField jTextFieldPrice;
-    private javax.swing.JTextField jTextFieldTicketType;
-    private javax.swing.JTextField jTextFieldTime2;
-    private javax.swing.JTextField jTextFieldTo;
+    public static javax.swing.JTextField jTextFieldClass;
+    public static javax.swing.JTextField jTextFieldDate2;
+    public static javax.swing.JTextField jTextFieldForm;
+    public static javax.swing.JTextField jTextFieldPassengers2;
+    public static javax.swing.JTextField jTextFieldPrice;
+    public static javax.swing.JTextField jTextFieldTicketType;
+    public static javax.swing.JTextField jTextFieldTime2;
+    public static javax.swing.JTextField jTextFieldTo;
     private rojeru_san.complementos.RSButtonHover rSButtonHover4;
     // End of variables declaration//GEN-END:variables
 }

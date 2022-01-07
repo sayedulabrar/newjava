@@ -40,7 +40,10 @@ public class three extends javax.swing.JFrame {
         jTextFieldPassenger1 = new javax.swing.JTextField();
         jComboBoxTime = new javax.swing.JComboBox<>();
         jDateChooser = new com.toedter.calendar.JDateChooser();
-        rSButtonHover2 = new rojeru_san.complementos.RSButtonHover();
+        submit = new rojeru_san.complementos.RSButtonHover();
+        jLabel4 = new javax.swing.JLabel();
+        jRadioButtonSingle1 = new javax.swing.JRadioButton();
+        jRadioButtonReturn1 = new javax.swing.JRadioButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -52,7 +55,7 @@ public class three extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel2.setText("Destinantion ");
 
-        jComboBoxDestination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Destination ", "Himamaylan", "Binalbagan", "Kabankalan", "Bacolod", "Hinigaran", "Isabela" }));
+        jComboBoxDestination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Destination ", "Hyderabad", "New Delhi", "Pune", "Vizag", "Banglore", "Gujrath" }));
         jComboBoxDestination.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxDestinationActionPerformed(evt);
@@ -89,7 +92,31 @@ public class three extends javax.swing.JFrame {
 
         jComboBoxTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Time", "11:30", "12:30", "1:30", "2:30" }));
 
-        rSButtonHover2.setText("Submit");
+        submit.setText("Submit");
+        submit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel4.setText("Ticket Type ");
+
+        jRadioButtonSingle1.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        jRadioButtonSingle1.setText("Single");
+        jRadioButtonSingle1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonSingle1ActionPerformed(evt);
+            }
+        });
+
+        jRadioButtonReturn1.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        jRadioButtonReturn1.setText("Return");
+        jRadioButtonReturn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonReturn1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -98,11 +125,12 @@ public class three extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(rSButtonHover2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(submit, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(178, 178, 178))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,11 +138,15 @@ public class three extends javax.swing.JFrame {
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextFieldPassenger1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addComponent(jRadioButtonFirstClass1)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jRadioButtonFirstClass1)
+                                            .addComponent(jRadioButtonSingle1))
                                         .addGap(189, 189, 189)
-                                        .addComponent(jRadioButtonEconomy1))
-                                    .addComponent(jTextFieldPassenger1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jRadioButtonReturn1)
+                                            .addComponent(jRadioButtonEconomy1))))))
                         .addGroup(jPanel3Layout.createSequentialGroup()
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel3)
@@ -146,15 +178,24 @@ public class three extends javax.swing.JFrame {
                         .addComponent(jRadioButtonEconomy1)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jRadioButtonFirstClass1, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButtonReturn1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jRadioButtonSingle1, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextFieldPassenger1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
-                .addComponent(rSButtonHover2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77))
+                .addComponent(submit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jComboBoxDestination, jComboBoxTime, jDateChooser, jRadioButtonEconomy1, jRadioButtonFirstClass1, jTextFieldPassenger1});
@@ -222,6 +263,892 @@ public class three extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButtonHover1ActionPerformed
 
+    private void jRadioButtonSingle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonSingle1ActionPerformed
+        // TODO add your handling code here:
+        if(jRadioButtonSingle1.isSelected()){
+            jRadioButtonReturn1.setSelected(false);}
+    }//GEN-LAST:event_jRadioButtonSingle1ActionPerformed
+
+    private void jRadioButtonReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonReturn1ActionPerformed
+        // TODO add your handling code here:
+        if(jRadioButtonReturn1.isSelected()){
+            jRadioButtonSingle1.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButtonReturn1ActionPerformed
+
+    private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
+        five x=new five();
+        
+        int fare=200;
+        int Tax = 15;
+        int miles = 0;
+        int Tfare =0;
+        int Dtax=0;
+        int SubTotal = 0;
+      
+       if(jComboBoxDestination.getSelectedItem().equals("Pune") && jRadioButtonFirstClass1.isSelected()&& 
+               jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+    
+        int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Pune");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+           miles = 6;
+           Tfare= (miles*fare)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+         
+       }
+        else if(jComboBoxDestination.getSelectedItem().equals("Pune") && jRadioButtonEconomy1.isSelected()&& 
+                jRadioButtonSingle1.isSelected() && (!(jTextFieldPassenger1.getText()== null) )){
+          int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Pune");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+      
+           miles = 6;
+           Tfare= miles*fare;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+          if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+        else if(jComboBoxDestination.getSelectedItem().equals("Pune") && jRadioButtonFirstClass1.isSelected()&& 
+               jRadioButtonReturn1.isSelected() && (!(jTextFieldPassenger1.getText()== null)) ){
+           int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+     
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Pune");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+          miles = 6;
+           Tfare= (miles*fare*2)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+          if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+        else if(jComboBoxDestination.getSelectedItem().equals("Pune") && jRadioButtonEconomy1.isSelected()&& 
+                jRadioButtonReturn1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+          int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Pune");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+           miles = 6;
+           Tfare= miles*fare*2;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else if(jComboBoxTime.getSelectedItem().equals("Select Time")){
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Gujrath")&& jRadioButtonEconomy1.isSelected()&& 
+               jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+     int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+     
+      five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Gujrath");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("One Way");       
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+              miles = 4;
+           Tfare= miles*fare;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Gujrath") && jRadioButtonFirstClass1.isSelected() && 
+               jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+           int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Gujrath");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+                  miles = 4;
+           Tfare= (miles*fare)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+          if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else{
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Gujrath")&& jRadioButtonEconomy1.isSelected()&& 
+               jRadioButtonReturn1.isSelected() && (!(jTextFieldPassenger1.getText()== null) )){
+      int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+       
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Gujrath");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("Binalabagan");
+       
+       miles = 4;
+           Tfare= miles*fare*2;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+           if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Gujrath") && jRadioButtonFirstClass1.isSelected() && 
+               jRadioButtonReturn1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+       int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+     
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Gujrath");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("Round Trip");
+      five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+      
+           miles = 4;
+           Tfare= (miles*fare*2)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+          if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Vizag") && jRadioButtonEconomy1.isSelected() 
+               && jRadioButtonReturn1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+       int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Vizag");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+       miles = 5;
+           Tfare= miles*fare*2;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+          if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+           else if(jComboBoxDestination.getSelectedItem().equals("Vizag") && jRadioButtonFirstClass1.isSelected()
+                   && jRadioButtonReturn1.isSelected() && (!(jTextFieldPassenger1.getText()== null) )){
+          int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Vizag");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("Round Trip");
+      five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+           miles = 5;
+           Tfare= (miles*fare*2)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+       if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Vizag") && jRadioButtonEconomy1.isSelected()
+               && jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+       int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Vizag");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+      
+       miles = 5;
+           Tfare= miles*fare;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+   if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+           else if(jComboBoxDestination.getSelectedItem().equals("Vizag") && jRadioButtonFirstClass1.isSelected()
+                   && jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+      int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Vizag");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+      
+           miles = 5;
+           Tfare= (miles*fare)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Banglore")&& jRadioButtonEconomy1.isSelected()
+               && jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+       int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+   
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Banglore");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+       miles = 7;
+           Tfare= miles*fare;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+          else if(jComboBoxDestination.getSelectedItem().equals("Banglore") && jRadioButtonFirstClass1.isSelected()
+                  && jRadioButtonReturn1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+         int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+     
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Banglore");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+           miles = 7;
+           Tfare= (miles*fare*2)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*(Pass);
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+        if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+          else if(jComboBoxDestination.getSelectedItem().equals("Banglore")&& jRadioButtonEconomy1.isSelected()
+               && jRadioButtonReturn1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+       int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Banglore");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+       miles = 7;
+           Tfare= miles*fare*2;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+          else if(jComboBoxDestination.getSelectedItem().equals("Banglore") && jRadioButtonFirstClass1.isSelected()
+                  && jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+         int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Banglore");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+      
+           miles = 7;
+           Tfare= (miles*fare)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*(Pass);
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+        if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+          else if(jComboBoxDestination.getSelectedItem().equals("Hyderabad")&& jRadioButtonEconomy1.isSelected()
+               && jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+      int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+     
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Hyderabad");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("Binalabagan");
+      
+        miles = 9;
+           Tfare= miles*fare;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+        if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Hyderabad") && jRadioButtonFirstClass1.isSelected()
+               && jRadioButtonSingle1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) ) ){
+         int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+     
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Hyderabad");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("One Way");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+      
+           miles = 9;
+           Tfare= (miles*fare)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Hyderabad")&& jRadioButtonEconomy1.isSelected()
+               && jRadioButtonReturn1.isSelected()&& (!(jTextFieldPassenger1.getText()== null) )){
+      int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+     
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Hyderabad");
+       five.jTextFieldClass.setText("Economy");
+       five.jTextFieldTicketType.setText("Round Trip");
+       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+       
+        miles = 9;
+           Tfare= miles*fare*2;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+        five.jTextFieldPrice.setText(Stotal);
+           if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }
+         
+       }
+       else if(jComboBoxDestination.getSelectedItem().equals("Hyderabad") && jRadioButtonFirstClass1.isSelected()
+               && jRadioButtonReturn1.isSelected() && (!(jTextFieldPassenger1.getText()== null) )){           
+         int Pass = Integer.parseInt(jTextFieldPassenger1.getText());
+      
+       five.jTextFieldPassengers2.setText(jTextFieldPassenger1.getText());
+         five.jTextFieldTo.setText("Hyderabad");
+       five.jTextFieldClass.setText("First Class");
+       five.jTextFieldTicketType.setText("Round Trip");
+      five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
+         five.jTextFieldForm.setText("New Delhi");
+     
+        miles = 9;
+           Tfare= (miles*fare*2)+500;
+           Dtax = (Tax*Tfare)/100;
+           SubTotal = (Dtax + Tfare)*Pass;
+          
+          String Stotal = String.format("%d",SubTotal);    
+       
+       five.jTextFieldPrice.setText(Stotal);
+      five.jTextFieldTicketType.setText("Round Trip");
+         if(jComboBoxTime.getSelectedItem().equals("11:30")){
+        five.jTextFieldTime2.setText("11:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("12:30")){
+        five.jTextFieldTime2.setText("12:30");
+        }
+         else if(jComboBoxTime.getSelectedItem().equals("1:30")){
+        five.jTextFieldTime2.setText("1:30");
+        }else if(jComboBoxTime.getSelectedItem().equals("2:30")){five.jTextFieldTime2.setText("2:30");}
+        else {
+          five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+        }  
+       }
+       else if((!jRadioButtonSingle1.isSelected() && !jRadioButtonReturn1.isSelected()) ||
+               (!jRadioButtonFirstClass1.isSelected()&& !jRadioButtonEconomy1.isSelected()) ||
+               jComboBoxDestination.getSelectedItem().equals("Select Destination")|| jTextFieldPassenger1.getText()== "" ){
+       five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);       
+       }       
+      
+      
+       else{
+           five.jTextFieldTo.setText(null);
+       
+       
+       
+       five.jTextFieldPrice.setText(null);
+       five.jTextFieldForm.setText(null);
+       five.jTextFieldDate2.setText(null);
+       five.jTextFieldTime2.setText(null);
+       five.jTextFieldClass.setText(null);
+       five.jTextFieldPassengers2.setText(null);
+       five.jTextFieldTicketType.setText(null);
+       }
+        
+        
+        x.setVisible(true);
+    }//GEN-LAST:event_submitActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -263,6 +1190,7 @@ public class three extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser jDateChooser;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -271,8 +1199,10 @@ public class three extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioButtonEconomy1;
     private javax.swing.JRadioButton jRadioButtonFirstClass1;
+    private javax.swing.JRadioButton jRadioButtonReturn1;
+    private javax.swing.JRadioButton jRadioButtonSingle1;
     private javax.swing.JTextField jTextFieldPassenger1;
-    private rojeru_san.complementos.RSButtonHover rSButtonHover2;
     private rojeru_san.componentes.RSCalendar rSCalendar1;
+    private rojeru_san.complementos.RSButtonHover submit;
     // End of variables declaration//GEN-END:variables
 }
