@@ -44,6 +44,7 @@ public class login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 800));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));

@@ -35,6 +35,7 @@ public class Userchoice extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));

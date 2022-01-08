@@ -37,6 +37,7 @@ public class JFrame1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 204));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
