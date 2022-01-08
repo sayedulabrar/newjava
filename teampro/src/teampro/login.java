@@ -8,6 +8,11 @@ package teampro;
  *
  * @author Natsuki Rafi
  */
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 public class login extends javax.swing.JFrame {
 
     /**
@@ -30,9 +35,9 @@ public class login extends javax.swing.JFrame {
         rSButtonHover3 = new rojeru_san.complementos.RSButtonHover();
         jLabel1 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
+        name = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jPassword = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
         rSButtonHover1 = new rojeru_san.complementos.RSButtonHover();
         jLabel6 = new javax.swing.JLabel();
@@ -48,6 +53,11 @@ public class login extends javax.swing.JFrame {
         jLabel7.setBounds(220, 40, 250, 40);
 
         rSButtonHover3.setText("Login");
+        rSButtonHover3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rSButtonHover3);
         rSButtonHover3.setBounds(190, 320, 130, 40);
 
@@ -61,12 +71,12 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(jSeparator3);
         jSeparator3.setBounds(180, 150, 310, 10);
 
-        jTextField3.setBackground(new java.awt.Color(0, 204, 153));
-        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("Username");
-        jTextField3.setBorder(null);
-        getContentPane().add(jTextField3);
-        jTextField3.setBounds(190, 110, 300, 30);
+        name.setBackground(new java.awt.Color(0, 204, 153));
+        name.setForeground(new java.awt.Color(255, 255, 255));
+        name.setText("Username");
+        name.setBorder(null);
+        getContentPane().add(name);
+        name.setBounds(190, 110, 300, 30);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/teampro/icons8-unlock-32.png"))); // NOI18N
@@ -74,12 +84,12 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(120, 180, 40, 40);
 
-        jPasswordField1.setBackground(new java.awt.Color(0, 204, 153));
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setText("password");
-        jPasswordField1.setBorder(null);
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(190, 180, 300, 30);
+        jPassword.setBackground(new java.awt.Color(0, 204, 153));
+        jPassword.setForeground(new java.awt.Color(255, 255, 255));
+        jPassword.setText("password");
+        jPassword.setBorder(null);
+        getContentPane().add(jPassword);
+        jPassword.setBounds(190, 180, 300, 30);
 
         jSeparator1.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(204, 255, 255));
@@ -90,9 +100,9 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(rSButtonHover1);
         rSButtonHover1.setBounds(350, 320, 140, 40);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Natsuki Rafi\\Pictures\\1.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/teampro/1.jpg"))); // NOI18N
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(0, 0, 640, 410);
+        jLabel6.setBounds(0, 0, 640, 390);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -100,6 +110,40 @@ public class login extends javax.swing.JFrame {
     private void rSButtonHover2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButtonHover2ActionPerformed
+
+    private void rSButtonHover3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover3ActionPerformed
+        // TODO add your handling code here:
+        try{
+           File f = new File("login.txt");
+        Scanner sc = new Scanner(f);
+        boolean x=false;
+        while (sc.hasNextLine()) {
+            String nn = sc.nextLine();
+            char[] pass = jPassword.getPassword();
+             String passString = new String(pass);
+            
+            
+           
+            if (nn.contains(name.getText()) && (nn.contains(passString)==true)) {
+               
+                x=true;
+            }
+            else if(nn.contains(name.getText()) && (nn.contains(passString)==false))
+                    {
+                         
+                         x=false;
+                    }
+        }
+        if(x==false)
+        {
+            JOptionPane.showMessageDialog(this, "PassWord Incorrect");
+            
+        }
+        
+        }catch (IOException e) {
+			e.printStackTrace();
+		}
+    }//GEN-LAST:event_rSButtonHover3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,10 +185,10 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPassword;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField name;
     private rojeru_san.complementos.RSButtonHover rSButtonHover1;
     private rojeru_san.complementos.RSButtonHover rSButtonHover3;
     // End of variables declaration//GEN-END:variables

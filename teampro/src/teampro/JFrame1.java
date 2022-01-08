@@ -46,6 +46,11 @@ public class JFrame1 extends javax.swing.JFrame {
         jLabel7.setBounds(90, 40, 460, 40);
 
         rSButtonHover3.setText("Register");
+        rSButtonHover3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rSButtonHover3);
         rSButtonHover3.setBounds(230, 170, 200, 40);
 
@@ -65,6 +70,11 @@ public class JFrame1 extends javax.swing.JFrame {
         jSeparator2.setBounds(190, 338, 310, 2);
 
         rSButtonHover4.setText("Login");
+        rSButtonHover4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rSButtonHover4);
         rSButtonHover4.setBounds(230, 270, 200, 40);
 
@@ -79,6 +89,18 @@ public class JFrame1 extends javax.swing.JFrame {
     private void rSButtonHover1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButtonHover1ActionPerformed
+
+    private void rSButtonHover4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover4ActionPerformed
+        // TODO add your handling code here:
+        login a=new login();
+        a.setVisible(true);
+    }//GEN-LAST:event_rSButtonHover4ActionPerformed
+
+    private void rSButtonHover3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover3ActionPerformed
+        // TODO add your handling code here:
+        Register xx=new Register();
+        xx.setVisible(true);
+    }//GEN-LAST:event_rSButtonHover3ActionPerformed
 
     /**
      * @param args the command line arguments
