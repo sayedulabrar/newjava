@@ -1219,10 +1219,10 @@ public class three extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JRadioButton jRadioButtonEconomy1;
-    private javax.swing.JRadioButton jRadioButtonFirstClass1;
-    private javax.swing.JRadioButton jRadioButtonReturn1;
-    private javax.swing.JRadioButton jRadioButtonSingle1;
+    public static javax.swing.JRadioButton jRadioButtonEconomy1;
+    public static javax.swing.JRadioButton jRadioButtonFirstClass1;
+    public static javax.swing.JRadioButton jRadioButtonReturn1;
+    public static javax.swing.JRadioButton jRadioButtonSingle1;
     public static javax.swing.JTextField jTextFieldPassenger1;
     private rojeru_san.componentes.RSCalendar rSCalendar1;
     private rojeru_san.complementos.RSButtonHover submit;

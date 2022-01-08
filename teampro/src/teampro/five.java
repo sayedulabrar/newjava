@@ -5,6 +5,8 @@
  */
 package teampro;
 
+import static teampro.three.jRadioButtonReturn1;
+
 /**
  *
  * @author Network lab
@@ -300,14 +302,33 @@ public class five extends javax.swing.JFrame {
 
     private void rSButtonHover2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover2ActionPerformed
         // TODO add your handling code here:
-        int Dtax=Integer.parseInt(three.jTextFieldPassenger1.getText())*6*200*2/100;
-        int SubTotal = Dtax*10-Dtax;
-        int Tfare =Dtax+SubTotal;
-
+        int fare=200;
+        int Tax = 15;
+        int miles = 0;
+        int Tfare =0;
+        int Dtax=0;
+        int SubTotal = 0;
+        miles = 6;
+           Tfare= (miles*fare);
+           if(three.jRadioButtonReturn1.isSelected())
+           {
+               Tfare=Tfare*2;
+           }
+           if(three.jRadioButtonFirstClass1.isSelected())
+           {
+               Tfare=Tfare+500;
+           }
+           
+           Dtax = (Tax*Tfare)/100;
+           int pass=Integer.parseInt(three.jTextFieldPassenger1.getText());
+           SubTotal = (Dtax + Tfare)*pass;
+           
+        
+        
         six ss=new six();
         ss.jTextFieldTotal.setText(Integer.toString(SubTotal));
         ss.jTextFieldTax.setText(Integer.toString(Dtax));
-        ss.jTextFieldSubTotal.setText(Integer.toString(Tfare));
+        
         ss.setVisible(true);
     }//GEN-LAST:event_rSButtonHover2ActionPerformed
 
