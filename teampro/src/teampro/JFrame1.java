@@ -14,6 +14,7 @@ public class JFrame1 extends javax.swing.JFrame {
      * Creates new form JFrame1
      */
     public JFrame1() {
+        
         initComponents();
     }
 
@@ -82,7 +83,7 @@ public class JFrame1 extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, 0, 640, 410);
 
-        pack();
+        setSize(new java.awt.Dimension(643, 441));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -130,8 +131,10 @@ public class JFrame1 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+               
                 new JFrame1().setVisible(true);
             }
         });

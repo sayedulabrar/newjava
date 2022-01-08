@@ -43,6 +43,7 @@ public class login extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(800, 800));
         getContentPane().setLayout(null);
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
@@ -104,7 +105,7 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, 0, 640, 390);
 
-        pack();
+        setBounds(0, 0, 661, 429);
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSButtonHover2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover2ActionPerformed
@@ -171,6 +172,7 @@ public class login extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
