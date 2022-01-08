@@ -55,7 +55,7 @@ public class three extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel2.setText("Destinantion ");
 
-        jComboBoxDestination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Destination ", "Hyderabad", "New Delhi", "Pune", "Vizag", "Banglore", "Gujrath" }));
+        jComboBoxDestination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Destination ", "Hyderabad", "Pune", "Vizag", "Banglore", "Gujrath" }));
         jComboBoxDestination.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxDestinationActionPerformed(evt);
@@ -295,7 +295,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
            miles = 6;
            Tfare= (miles*fare)+500;
@@ -337,7 +337,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
       
            miles = 6;
            Tfare= miles*fare;
@@ -378,7 +378,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("Round Trip");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
           miles = 6;
            Tfare= (miles*fare*2)+500;
            Dtax = (Tax*Tfare)/100;
@@ -419,7 +419,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("Round Trip");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
            miles = 6;
            Tfare= miles*fare*2;
@@ -460,7 +460,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("One Way");       
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
               miles = 4;
            Tfare= miles*fare;
            Dtax = (Tax*Tfare)/100;
@@ -501,7 +501,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
                   miles = 4;
            Tfare= (miles*fare)+500;
            Dtax = (Tax*Tfare)/100;
@@ -583,7 +583,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("Round Trip");
       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
       
            miles = 4;
@@ -625,7 +625,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("Round Trip");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
        miles = 5;
            Tfare= miles*fare*2;
@@ -667,7 +667,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("Round Trip");
       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
            miles = 5;
            Tfare= (miles*fare*2)+500;
@@ -708,7 +708,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
       
        miles = 5;
            Tfare= miles*fare;
@@ -750,7 +750,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
       
            miles = 5;
            Tfare= (miles*fare)+500;
@@ -791,7 +791,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
        miles = 7;
            Tfare= miles*fare;
@@ -833,7 +833,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("Round Trip");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
            miles = 7;
            Tfare= (miles*fare*2)+500;
@@ -875,7 +875,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("Round Trip");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
        miles = 7;
            Tfare= miles*fare*2;
@@ -916,7 +916,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
       
            miles = 7;
            Tfare= (miles*fare)+500;
@@ -998,7 +998,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("One Way");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
       
            miles = 9;
            Tfare= (miles*fare)+500;
@@ -1039,7 +1039,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("Economy");
        five.jTextFieldTicketType.setText("Round Trip");
        five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
        
         miles = 9;
            Tfare= miles*fare*2;
@@ -1081,7 +1081,7 @@ public class three extends javax.swing.JFrame {
        five.jTextFieldClass.setText("First Class");
        five.jTextFieldTicketType.setText("Round Trip");
       five.jTextFieldDate2.setText(jDateChooser.getDate().toString());
-         five.jTextFieldForm.setText("New Delhi");
+         five.jTextFieldForm.setText("Dhaka");
      
         miles = 9;
            Tfare= (miles*fare*2)+500;
@@ -1207,7 +1207,7 @@ public class three extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBoxDestination;
+    public static javax.swing.JComboBox<String> jComboBoxDestination;
     private javax.swing.JComboBox<String> jComboBoxTime;
     private com.toedter.calendar.JDateChooser jDateChooser;
     private javax.swing.JLabel jLabel2;

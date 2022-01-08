@@ -304,11 +304,40 @@ public class five extends javax.swing.JFrame {
         // TODO add your handling code here:
         int fare=200;
         int Tax = 15;
-        int miles = 0;
+        int miles=0;
         int Tfare =0;
         int Dtax=0;
         int SubTotal = 0;
-        miles = 6;
+        
+        if(three.jComboBoxDestination.getSelectedItem().equals("Hyderabad"))
+        {
+            miles=9;
+        }
+        
+        if(three.jComboBoxDestination.getSelectedItem().equals("Banglore"))
+        {
+            miles=7;
+        }
+        if(three.jComboBoxDestination.getSelectedItem().equals("Vizag"))
+        {
+            miles=5;
+        }
+        
+        if(three.jComboBoxDestination.getSelectedItem().equals("Gujrath"))
+        {
+            miles=4;
+        }
+        
+        if(three.jComboBoxDestination.getSelectedItem().equals("Pune"))
+        {
+            miles=6;
+        }
+        if(three.jComboBoxDestination.getSelectedItem().equals("Gujrath"))
+        {
+            miles=4;
+        }
+        
+        
            Tfare= (miles*fare);
            if(three.jRadioButtonReturn1.isSelected())
            {
@@ -329,6 +358,8 @@ public class five extends javax.swing.JFrame {
         ss.jTextFieldTotal.setText(Integer.toString(SubTotal));
         ss.jTextFieldTax.setText(Integer.toString(Dtax));
         
+        ss.jTextFieldTotal.setEditable(false);
+        ss.jTextFieldTax.setEditable(false);
         ss.setVisible(true);
     }//GEN-LAST:event_rSButtonHover2ActionPerformed
 
