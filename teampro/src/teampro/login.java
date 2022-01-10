@@ -140,6 +140,10 @@ public class login extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(this, "PassWord Incorrect");
             
+        }else if(x==true)
+        {
+            Userchoice z=new Userchoice();
+            z.setVisible(true);
         }
         
         }catch (IOException e) {

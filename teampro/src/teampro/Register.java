@@ -4,6 +4,11 @@
  */
 package teampro;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  *
  * @author Natsuki Rafi
@@ -29,11 +34,11 @@ public class Register extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
+        name = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        password = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
-        jTextField1 = new javax.swing.JTextField();
+        number = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         rSButtonHover2 = new rojerusan.RSButtonHover();
         jLabel3 = new javax.swing.JLabel();
@@ -60,12 +65,12 @@ public class Register extends javax.swing.JFrame {
         getContentPane().add(jSeparator3);
         jSeparator3.setBounds(180, 150, 310, 10);
 
-        jTextField3.setBackground(new java.awt.Color(0, 204, 153));
-        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setText("Username");
-        jTextField3.setBorder(null);
-        getContentPane().add(jTextField3);
-        jTextField3.setBounds(190, 110, 300, 30);
+        name.setBackground(new java.awt.Color(0, 204, 153));
+        name.setForeground(new java.awt.Color(255, 255, 255));
+        name.setText("Username");
+        name.setBorder(null);
+        getContentPane().add(name);
+        name.setBounds(190, 110, 300, 30);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/teampro/icons8-unlock-32.png"))); // NOI18N
@@ -73,24 +78,24 @@ public class Register extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(120, 170, 40, 40);
 
-        jPasswordField1.setBackground(new java.awt.Color(0, 204, 153));
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setText("password");
-        jPasswordField1.setBorder(null);
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(190, 160, 300, 30);
+        password.setBackground(new java.awt.Color(0, 204, 153));
+        password.setForeground(new java.awt.Color(255, 255, 255));
+        password.setText("password");
+        password.setBorder(null);
+        getContentPane().add(password);
+        password.setBounds(190, 160, 300, 30);
 
         jSeparator1.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(204, 255, 255));
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(180, 200, 310, 10);
 
-        jTextField1.setBackground(new java.awt.Color(0, 204, 153));
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Mobile Number");
-        jTextField1.setBorder(null);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(180, 220, 310, 30);
+        number.setBackground(new java.awt.Color(0, 204, 153));
+        number.setForeground(new java.awt.Color(255, 255, 255));
+        number.setText("Mobile Number");
+        number.setBorder(null);
+        getContentPane().add(number);
+        number.setBounds(190, 220, 300, 30);
 
         jSeparator2.setBackground(new java.awt.Color(204, 255, 255));
         jSeparator2.setForeground(new java.awt.Color(204, 255, 255));
@@ -98,6 +103,11 @@ public class Register extends javax.swing.JFrame {
         jSeparator2.setBounds(180, 260, 310, 10);
 
         rSButtonHover2.setText("Register");
+        rSButtonHover2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rSButtonHover2);
         rSButtonHover2.setBounds(320, 320, 170, 40);
 
@@ -115,6 +125,32 @@ public class Register extends javax.swing.JFrame {
     private void rSButtonHover1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButtonHover1ActionPerformed
+
+    private void rSButtonHover2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover2ActionPerformed
+        // TODO add your handling code here:
+        
+                          File log = new File("login.txt");
+                          try{
+                                String s1=name.getText();
+                                char[] pass = password.getPassword();
+                                String passString = new String(pass);
+                                String num=number.getText();
+            
+				
+				
+				FileWriter fw = new FileWriter(log,true);
+                                BufferedWriter bufferedWriter = new BufferedWriter(fw);
+                                bufferedWriter.write(s1+" "+passString+" "+num  +"\n");
+                                bufferedWriter.close();
+                                Userchoice z=new Userchoice();
+                                z.setVisible(true);
+                            }
+                                
+                        catch (IOException e) {
+			e.printStackTrace();
+		}
+			
+    }//GEN-LAST:event_rSButtonHover2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,12 +193,12 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField name;
+    private javax.swing.JTextField number;
+    private javax.swing.JPasswordField password;
     private rojerusan.RSButtonHover rSButtonHover2;
     // End of variables declaration//GEN-END:variables
 }
