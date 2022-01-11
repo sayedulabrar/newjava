@@ -8,6 +8,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -65,7 +66,7 @@ public class Register extends javax.swing.JFrame {
         getContentPane().add(jSeparator3);
         jSeparator3.setBounds(180, 150, 310, 10);
 
-        name.setBackground(new java.awt.Color(0, 204, 153));
+        name.setBackground(new java.awt.Color(153, 153, 153));
         name.setForeground(new java.awt.Color(255, 255, 255));
         name.setText("Username");
         name.setBorder(null);
@@ -74,11 +75,10 @@ public class Register extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/teampro/icons8-unlock-32.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 170, 40, 40);
+        jLabel2.setBounds(120, 160, 30, 50);
 
-        password.setBackground(new java.awt.Color(0, 204, 153));
+        password.setBackground(new java.awt.Color(153, 153, 153));
         password.setForeground(new java.awt.Color(255, 255, 255));
         password.setText("password");
         password.setBorder(null);
@@ -90,7 +90,7 @@ public class Register extends javax.swing.JFrame {
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(180, 200, 310, 10);
 
-        number.setBackground(new java.awt.Color(0, 204, 153));
+        number.setBackground(new java.awt.Color(153, 153, 153));
         number.setForeground(new java.awt.Color(255, 255, 255));
         number.setText("Mobile Number");
         number.setBorder(null);
@@ -136,14 +136,21 @@ public class Register extends javax.swing.JFrame {
                                 String passString = new String(pass);
                                 String num=number.getText();
             
-				
-				
-				FileWriter fw = new FileWriter(log,true);
+                                
+                                if(s1.isEmpty()||passString.isEmpty()||num.isEmpty()){
+				JOptionPane.showMessageDialog(this, "Incorrect Formation");
+                                
+                                }else
+                                {
+                                   FileWriter fw = new FileWriter(log,true);
                                 BufferedWriter bufferedWriter = new BufferedWriter(fw);
                                 bufferedWriter.write(s1+" "+passString+" "+num  +"\n");
                                 bufferedWriter.close();
                                 Userchoice z=new Userchoice();
-                                z.setVisible(true);
+                                z.setVisible(true); 
+                                }
+				
+				
                             }
                                 
                         catch (IOException e) {

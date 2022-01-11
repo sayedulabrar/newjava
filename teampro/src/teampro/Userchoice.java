@@ -60,6 +60,11 @@ public class Userchoice extends javax.swing.JFrame {
         rSButtonHover1.setBounds(240, 280, 170, 40);
 
         rSButtonHover3.setText("Seat Add");
+        rSButtonHover3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rSButtonHover3);
         rSButtonHover3.setBounds(240, 170, 170, 40);
 
@@ -83,6 +88,12 @@ public class Userchoice extends javax.swing.JFrame {
     private void rSButtonHover1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButtonHover1ActionPerformed
+
+    private void rSButtonHover3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover3ActionPerformed
+        // TODO add your handling code here:
+        seat xy=new seat();
+        xy.setVisible(true);
+    }//GEN-LAST:event_rSButtonHover3ActionPerformed
 
     /**
      * @param args the command line arguments

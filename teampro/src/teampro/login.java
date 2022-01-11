@@ -99,6 +99,11 @@ public class login extends javax.swing.JFrame {
         jSeparator1.setBounds(180, 220, 310, 10);
 
         rSButtonHover1.setText("Register");
+        rSButtonHover1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonHover1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(rSButtonHover1);
         rSButtonHover1.setBounds(350, 320, 140, 40);
 
@@ -126,11 +131,11 @@ public class login extends javax.swing.JFrame {
             
             
            
-            if (nn.contains(name.getText()) && (nn.contains(passString)==true)) {
+            if (name.getText().isEmpty()==false&& passString.isEmpty()==false &&nn.contains(name.getText()) && (nn.contains(passString)==true)) {
                
                 x=true;
             }
-            else if(nn.contains(name.getText()) && (nn.contains(passString)==false))
+            else 
                     {
                          
                          x=false;
@@ -150,6 +155,12 @@ public class login extends javax.swing.JFrame {
 			e.printStackTrace();
 		}
     }//GEN-LAST:event_rSButtonHover3ActionPerformed
+
+    private void rSButtonHover1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover1ActionPerformed
+        // TODO add your handling code here:
+        Register xx=new Register();
+        xx.setVisible(true);
+    }//GEN-LAST:event_rSButtonHover1ActionPerformed
 
     /**
      * @param args the command line arguments

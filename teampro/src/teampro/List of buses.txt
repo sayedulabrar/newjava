@@ -1,2 +1,0 @@
-destination  dateOfJourney      DepartureTime   Class  Passangers  BusNo
-Khulna       1 January Sunday   2.30pm          First  2           206
